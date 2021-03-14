@@ -183,3 +183,7 @@ data "aws_ami" "aws-linux" {
 output "instance-dns" {
   value = aws_instance.nodejs1.public_dns
 }
+
+output "public_ip" {
+  value = aws_instance.nodejs1.public_ip
+}
